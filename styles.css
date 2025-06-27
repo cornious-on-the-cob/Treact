@@ -897,6 +897,34 @@ Start
     transition: all 300ms;
 }
 
+
+/*
+
+Footer
+
+*/
+
+footer {
+    padding: 96px 32px;
+    background-color: rgb(100, 21, 255);
+    margin-bottom: -32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__columns {
+    margin-top: -48px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 /*
 
 all the @ medias
