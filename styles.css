@@ -9,17 +9,17 @@
 }
 
 a {
-    position: relative;
-    text-decoration: none;
+  position: relative;
+  text-decoration: none;
 }
 
 a:not(.nav__link--primary, .modal__link--primary)::after {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0; 
-  width: 0; 
-  height: 2px; 
+  left: 0;
+  width: 0;
+  height: 2px;
   bottom: -4px;
   background-color: #6415ff;
   transition: 300ms ease;
@@ -28,7 +28,6 @@ a:not(.nav__link--primary, .modal__link--primary)::after {
 a:hover::after {
   width: 100%;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -83,6 +82,9 @@ NAV BAR
 */
 
 .nav {
+  display: flex;
+  justify-content: sb;
+  align-items: center;
   height: 80px;
   display: flex;
   margin: 0 24px;
@@ -125,7 +127,6 @@ NAV BAR
   cursor: no-drop;
 }
 
-
 .nav__link--primary {
   margin: 0;
   padding: 10px 32px;
@@ -165,12 +166,12 @@ Hamburger Menu
 }
 
 .modal__link--primary {
-    color: #f7fafc;
-    padding: 12px 32px;
-    background: #6415ff;
-    border-radius: 500px;
-    border: none;
-    cursor: no-drop;
+  color: #f7fafc;
+  padding: 12px 32px;
+  background: #6415ff;
+  border-radius: 500px;
+  border: none;
+  cursor: no-drop;
 }
 
 .modal__links {
@@ -472,7 +473,6 @@ Quality Work
   color: #fff;
   font-weight: bold;
   transition: all 300ms;
-  margin-top: 36px;
 }
 
 /*
@@ -494,8 +494,13 @@ Steps
   width: 50%;
 }
 
-.steps__wrapper {
-  width: 50%;
+.step {
+    display: flex;
+    align-items: center;
+}
+
+.step__description {
+    margin: 24px;
 }
 
 .step__number {
@@ -544,6 +549,15 @@ Values
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.value__title {
+    display: flex;
+    align-items: center;
+}
+
+.value {
+    margin: 24px;
 }
 
 .value__name {
