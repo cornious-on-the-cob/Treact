@@ -472,6 +472,7 @@ Steps
 
 .step__number {
     color: #cbd5e0;
+    width: 100px 100px;
     font-size: 36px;
     font-weight: 600;
     line-height: 1;
@@ -491,6 +492,14 @@ Steps
     font-weight: 500;
     line-height: 2;
 }
+
+
+/*
+
+Values
+
+*/
+
 
 /*
 
